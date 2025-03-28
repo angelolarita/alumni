@@ -1,0 +1,138 @@
+body
+ {
+    height: 100%;
+    background-image: url('../icon/1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+}
+
+
+.container {
+    margin-top: 40px;
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.left-section {
+background: linear-gradient(135deg, #A8E6CF, #81C784);
+    color: #fff;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.left-section .logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.left-section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.social-icon img {
+    width: 40px;
+    border-radius: 50%;
+    background: #3b5998;
+    padding: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.right-section {
+    flex: 1.2;
+    background: #1a1a1a;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.right-section .header img {
+    width: 10%;
+    margin-bottom: 10px;
+}
+
+.right-section p {
+    color: #bbb;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.login-area {
+    width: 100%;
+   
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 6px;
+    /* Reduced padding */
+    margin: 1px 0;
+    border: 1px solid #444;
+    background: #2a2a2a;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+button {
+    background-color: darkgreen;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+.forgot-password {
+    color: #bbb;
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: #bbb;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        padding: 30px;
+    }
+}
